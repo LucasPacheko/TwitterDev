@@ -1,0 +1,27 @@
+<app-menu></app-menu>
+<div class="wrapper">
+  <div class="container">
+
+    <div class="barraInicial">
+      <h2>Tweets</h2>
+    </div>
+    <div class="tweet" *ngFor="let tweet of listaTweets">
+      <app-tweet [tweet]="tweet"></app-tweet>
+    </div>
+    <button (click)="add(TweetName.value); TweetName.value=''">
+      add
+    </button>
+  </div>
+  <ul class="Tweets">
+    <li *ngFor="Tweets :">
+      <a routerLink="/detail/{{Tweet.name}}">
+        <span class="badge">{{Tweet.name}}</span> {{Tweet.name}}
+      </a>
+      <button class="delete" title="delete Tweet"
+        (click)="delete(Tweet)">x</button>
+    </li>
+  </ul>
+
+
+  </div>
+</div>

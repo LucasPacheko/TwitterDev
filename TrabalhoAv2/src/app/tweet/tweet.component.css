@@ -1,0 +1,24 @@
+.box{
+    display: flex;
+    height: max-content;
+}.box img{
+    height:100px;
+    width: 100px;
+    border-radius:50%;
+}.box h3{
+    margin-top:0.2rem;
+    margin-left:1rem;
+}
+.post{
+    margin-top: 0.2rem;
+    margin-left:1rem;
+    padding-left:1rem;
+}.post img{
+    max-height: 600px;
+    height: calc(100% - 80px);
+
+    max-width:700px;
+    width: calc(100% - 80px);
+    border-radius:0;
+    padding-top:2.5rem;
+}
